@@ -5,7 +5,7 @@ Home: http://wiki.ros.org/rosinstall_generator
 
 Package license: BSD-3-Clause
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: A tool for generating rosinstall files
 

@@ -1,5 +1,5 @@
 {% set name = "rosinstall_generator" %}
-{% set version = "0.1.21" %}
+{% set version = "0.1.22" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/ros-infrastructure/{{ name }}/archive/{{ version }}.tar.gz
-  sha256: 4c5efbb8e5be8cbb90147cbd69e469128039906e5c49193c80da3f6c6ea9a40b
+  sha256: 84ad54735ad7db62fa6d23326426f258d265bd469431a8d2d538779afc75ae50
 
 build:
   noarch: python
