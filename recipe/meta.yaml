@@ -22,7 +22,7 @@ requirements:
     - python
   run:
     - catkin_pkg >=0.1.28
-    - python
+    - python >=3.6
     - pyyaml
     - rosdistro >=0.7.3
     - rospkg
