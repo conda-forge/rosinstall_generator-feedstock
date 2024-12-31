@@ -11,7 +11,7 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   entry_points:
     - rosinstall_generator=rosinstall_generator.cli:main
   script: '{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv '
@@ -19,16 +19,18 @@ build:
 requirements:
   host:
     - pip
-    - python
+    - python {{ python_min }}
   run:
     - catkin_pkg >=0.1.28
-    - python >=3.6
+    - python >={{ python_min }}
     - pyyaml
     - rosdistro >=0.7.3
     - rospkg
     - setuptools
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - rosinstall_generator
   commands:
